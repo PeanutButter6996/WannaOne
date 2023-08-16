@@ -15,3 +15,15 @@ Ta cần tìm $n$ sao cho $q(n) \ge 0.5$. Thế n vào công thức, ta sẽ tì
 ## 3. Jack's Birthday Confusion
 - Tham khảo công thức ở ```https://en.wikipedia.org/wiki/Birthday_problem#Arbitrary_number_of_days```
 - Thay thế 0.5 bằng 0.75, và thế từng d vào công thức ta sẽ tìm được n=76
+
+## 4. Hash Stuffing
+```python
+# 2^128 collision protection!
+BLOCK_SIZE = 32
+
+def pad(data):
+    padding_len = (BLOCK_SIZE - len(data)) % BLOCK_SIZE
+    return data + bytes([padding_len]*padding_len)
+```
+- Hàm sẽ thêm padding nếu ko đủ độ dài, nhưng nếu black đủ độ dài 32 thì lại không thêm gì.
+- Vì thế ```pad(b'\x01'*31) == pad(b'\x01'*32)```
