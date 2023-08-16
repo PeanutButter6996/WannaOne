@@ -2,7 +2,7 @@
 
 ## 1. Collider
 - Bài này server sẽ nhận vào các document và MD5 hash nó. Chúng ta cần 2 document khác nhau nhưng có cùng MD5 hash để có thể thu về được flag. <br>
-- Sau khi tìm kiếm thì em đã tìm được trang này, sử dụng 2 stirng mà đã cho sẵn, ta sẽ nhận được flag.
+- Sau khi tìm kiếm thì em đã tìm được trang này ```https://www.mscs.dal.ca/~selinger/md5collision/```, sử dụng 2 stirng mà đã cho sẵn, ta sẽ nhận được flag.
 ![image](https://github.com/PeanutButter6996/WannaOne/assets/109911533/ac3493f0-edd4-48c1-91d9-bca72dfbecb3)
 
 ## 2. Jack's Birthday Hash
